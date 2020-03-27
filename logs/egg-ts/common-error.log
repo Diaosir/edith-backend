@@ -1,0 +1,91 @@
+2020-03-27 18:56:21,496 ERROR 70991 [-/::1/-/8ms GET /api/] nodejs.TypeError: Cannot read property 'dd' of undefined
+    at ApiController.index (/Users/fengzhihao/Projects/github/edith-backend/app/controller/combinations.ts:6:11)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 70991
+hostname: hzzdemac-mini.local
+
+2020-03-27 18:56:21,682 ERROR 70991 [-/::1/-/0ms GET /api/] nodejs.TypeError: Cannot read property 'dd' of undefined
+    at ApiController.index (/Users/fengzhihao/Projects/github/edith-backend/app/controller/combinations.ts:6:11)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 70991
+hostname: hzzdemac-mini.local
+
+2020-03-27 18:56:21,872 ERROR 70991 [-/::1/-/0ms GET /api/] nodejs.TypeError: Cannot read property 'dd' of undefined
+    at ApiController.index (/Users/fengzhihao/Projects/github/edith-backend/app/controller/combinations.ts:6:11)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at /Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:36:12
+
+pid: 70991
+hostname: hzzdemac-mini.local
+
+2020-03-27 19:04:52,816 ERROR 71451 [-/::1/-/41ms GET /api/v2/topics/] nodejs.TypeError: Cannot set property 'body' of undefined
+    at Helper.exports.success (/Users/fengzhihao/Projects/github/edith-backend/app/extend/helper.ts:8:11)
+    at TopicController.index (/Users/fengzhihao/Projects/github/edith-backend/app/controller/topics.ts:25:16)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 71451
+hostname: hzzdemac-mini.local
+
+2020-03-27 19:07:54,657 ERROR 71597 [-/::1/-/9ms GET /api/v2/topics/] nodejs.TypeError: Cannot set property 'body' of undefined
+    at Helper.exports.success (/Users/fengzhihao/Projects/github/edith-backend/app/extend/helper.ts:8:11)
+    at TopicController.index (/Users/fengzhihao/Projects/github/edith-backend/app/controller/topics.ts:25:16)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/utils/index.js:44:21)
+    at Object.classControllerMiddleware (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-core@4.17.4@egg-core/lib/loader/mixin/controller.js:87:20)
+    at Object.callFn (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/utils.js:12:21)
+    at wrappedController (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/egg_router.js:322:18)
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+    at next (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:45:18)
+    at /Users/fengzhihao/Projects/github/edith-backend/node_modules/_@eggjs_router@2.0.0@@eggjs/router/lib/router.js:190:18
+    at dispatch (/Users/fengzhihao/Projects/github/edith-backend/node_modules/_koa-compose@3.2.1@koa-compose/index.js:44:32)
+
+pid: 71597
+hostname: hzzdemac-mini.local
+
+2020-03-27 19:23:19,395 ERROR 72453 [-/::1/-/9ms GET /api/v2/combinations] nodejs.TypeError: ctx.header.success is not a function
+    at ApiController.index (/Users/fengzhihao/Projects/github/edith-backend/app/controller/combinations.ts:7:16)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 72453
+hostname: hzzdemac-mini.local
+
+2020-03-27 19:23:34,383 ERROR 72453 [-/::1/-/2ms GET /api/v2/combinations] nodejs.TypeError: ctx.header.success is not a function
+    at ApiController.index (/Users/fengzhihao/Projects/github/edith-backend/app/controller/combinations.ts:7:16)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+pid: 72453
+hostname: hzzdemac-mini.local
+
