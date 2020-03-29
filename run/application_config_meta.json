@@ -115,7 +115,9 @@
       "typescript": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js"
     },
     "scripts": {
-      "dev": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js"
+      "dev": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "debug": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "test": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js"
     },
     "dependencies": {
       "egg": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
@@ -123,6 +125,8 @@
       "egg-scripts": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-shell-decorators": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-validate": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "lodash": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "md5": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "moment": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js"
     },
     "devDependencies": {
@@ -131,7 +135,9 @@
       "@types/supertest": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-bin": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-cors": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "egg-mock": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-ts-helper": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "supertest": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "tslib": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "tslint": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "typescript": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js"

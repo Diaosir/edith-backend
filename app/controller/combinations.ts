@@ -2,7 +2,8 @@ import { Controller } from 'egg';
 export default class ApiController extends Controller {
   async index() {
     const ctx = this.ctx;
-    const res = await this.ctx.service.package.combinations();
+    const { packages } = ctx.params;
+    const res = await this.ctx.service.package.combinations(ctx.helper.formatPackages(packages))
     // 设置响应体和状态码
     ctx.helper.success({
       ctx,

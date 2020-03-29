@@ -114,7 +114,9 @@
         "typescript": true
       },
       "scripts": {
-        "dev": "egg-bin dev -r egg-ts-helper/register"
+        "dev": "egg-bin dev -r egg-ts-helper/register",
+        "debug": "egg-bin debug",
+        "test": "egg-bin test"
       },
       "dependencies": {
         "egg": "^2.6.1",
@@ -122,6 +124,8 @@
         "egg-scripts": "^2.6.0",
         "egg-shell-decorators": "^1.0.4",
         "egg-validate": "^2.0.2",
+        "lodash": "^4.17.15",
+        "md5": "^2.2.1",
         "moment": "^2.24.0"
       },
       "devDependencies": {
@@ -130,7 +134,9 @@
         "@types/supertest": "^2.0.0",
         "egg-bin": "^4.6.2",
         "egg-cors": "^2.1.0",
+        "egg-mock": "^4.0.0",
         "egg-ts-helper": "^1.4.2",
+        "supertest": "^4.0.2",
         "tslib": "^1.9.0",
         "tslint": "^4.0.0",
         "typescript": "^2.8.1"

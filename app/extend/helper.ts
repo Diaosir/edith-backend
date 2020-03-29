@@ -8,3 +8,11 @@ exports.success = ({ ctx, res = null, status })=> {
   ctx.body = res
   ctx.status = status
 }
+
+exports.formatPackages = (str) => {
+  str = str.replace(/\.json$/, '')
+  return str.split('+');
+}
+exports.getRequireImportPath = (content) => {
+  console.log(content)
+}
