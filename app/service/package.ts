@@ -3,7 +3,7 @@ import * as fs from 'fs'
 import * as childrenProcess from 'child_process';
 import * as path from 'path'
 import * as md5 from 'md5'
-import getModule from '../utils/module'
+import { EdithModule } from '../utils/module'
 // import * as _ from 'lodash'
 interface IContent {
   content: string;
@@ -17,19 +17,11 @@ export default class PackageService extends Service {
     dependencies: any;
     devDependencies: IDependencies;
   }> {
-    console.log(packages)
     const id = md5(packages.join(''))
     const { baseDir } = this.ctx.app;
     const  edith_node_modules_path = path.join(baseDir, 'edith_node_modules', id)
-    await this.install(edith_node_modules_path, packages)
+    // await this.install(edith_node_modules_path, packages)
     const { dependencies, devDependencies } = await this.getDependencies(edith_node_modules_path, packages);
-    // const json = JSON.parse(fs.readFileSync('./content1.json', 'utf-8'));
-    // const res: any = await this.ctx.curl(`https://prod-packager-packages.codesandbox.io/v1/combinations` , {
-    //   method: 'GET',
-    //   data: this.ctx.query,
-    //   dataType: "json",
-    //   contentType: 'json'
-    // })
     let contents: any = {};
     await Promise.all(Object.keys(devDependencies).map(async name => {
       const { entries } = devDependencies[name]
@@ -50,7 +42,7 @@ export default class PackageService extends Service {
 
     }
     return new Promise((resolve) => {
-      const cnpm = childrenProcess.spawn('cnpm', ['install'].concat(params), { cwd: edith_node_modules_path});
+      const cnpm = childrenProcess.spawn('cnpm', ['install', '--production'].concat(params), { cwd: edith_node_modules_path});
       cnpm.stdout.on('data', (data) => {
         console.log(data.toString());
       });
@@ -66,7 +58,7 @@ export default class PackageService extends Service {
   async getContent(edith_node_modules_path: string, contents: {
     [key: string]: IContent
   }, entry: string) {
-    const module = getModule(entry, null, path.join(edith_node_modules_path, '/node_modules'));
+    const module = new EdithModule(entry, null, path.join(edith_node_modules_path, '/node_modules'));
     const content = await module.getContents();
     Object.keys(content).forEach(key => {
       contents[key] = content[key];
