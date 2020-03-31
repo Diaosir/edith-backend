@@ -145,6 +145,7 @@
         "test": "egg-bin test"
       },
       "dependencies": {
+        "@babel/template": "^7.8.6",
         "egg": "^2.6.1",
         "egg-jwt": "^3.0.0",
         "egg-scripts": "^2.6.0",

@@ -3,7 +3,8 @@ import * as fs from 'fs'
 import * as childrenProcess from 'child_process';
 import * as path from 'path'
 import * as md5 from 'md5'
-import { EdithModule } from '../utils/module'
+// import _ from 'lodash'
+import getModule, { EdithModule } from '../utils/module'
 // import * as _ from 'lodash'
 interface IContent {
   content: string;
@@ -17,16 +18,17 @@ export default class PackageService extends Service {
     dependencies: any;
     devDependencies: IDependencies;
   }> {
+    EdithModule._cache = {};
     const id = md5(packages.join(''))
     const { baseDir } = this.ctx.app;
     const  edith_node_modules_path = path.join(baseDir, 'edith_node_modules', id)
-    // await this.install(edith_node_modules_path, packages)
+    await this.install(edith_node_modules_path, packages)
     const { dependencies, devDependencies } = await this.getDependencies(edith_node_modules_path, packages);
     let contents: any = {};
-    await Promise.all(Object.keys(devDependencies).map(async name => {
-      const { entries } = devDependencies[name]
+    await Promise.all(dependencies.map(async (item) => {
+      const { entries } = devDependencies[item.name]
       if(Array.isArray(entries) && entries.length > 0){
-        await this.getContent(edith_node_modules_path, contents, `${name}/${entries[0]}`);
+        await this.getContent(edith_node_modules_path, contents, `${item.name}/${entries[0]}`);
       }
     }))
     return {
@@ -58,11 +60,13 @@ export default class PackageService extends Service {
   async getContent(edith_node_modules_path: string, contents: {
     [key: string]: IContent
   }, entry: string) {
-    const module = new EdithModule(entry, null, path.join(edith_node_modules_path, '/node_modules'));
-    const content = await module.getContents();
-    Object.keys(content).forEach(key => {
-      contents[key] = content[key];
-    })
+    const module = await getModule(entry, null, path.join(edith_node_modules_path, '/node_modules'));
+    if(module) {
+      const content = await module.getContents();
+      Object.keys(content).forEach(key => {
+        contents[key] = content[key];
+      })
+    }
   }
   async getDependencies(edith_node_modules_path: string, packages: Array<string>): Promise<{
     dependencies: any;

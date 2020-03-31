@@ -120,6 +120,7 @@
       "test": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js"
     },
     "dependencies": {
+      "@babel/template": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-jwt": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-scripts": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
