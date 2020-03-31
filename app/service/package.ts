@@ -44,7 +44,9 @@ export default class PackageService extends Service {
 
     }
     return new Promise((resolve) => {
-      const cnpm = childrenProcess.spawn('cnpm', ['install', '--production'].concat(params), { cwd: edith_node_modules_path});
+      const cnpm = childrenProcess.exec(`cnpm install --production ${params.join(' ')}`, { 
+        cwd: edith_node_modules_path
+      });
       cnpm.stdout.on('data', (data) => {
         console.log(data.toString());
       });

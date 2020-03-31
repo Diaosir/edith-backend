@@ -17,7 +17,7 @@
     "onerror": {
       "errorPageUrl": "",
       "appErrorFilter": null,
-      "templatePath": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-onerror@2.1.0@egg-onerror/lib/onerror_page.mustache"
+      "templatePath": "G:\\github\\edith-backend\\node_modules\\_egg-onerror@2.1.0@egg-onerror\\lib\\onerror_page.mustache"
     },
     "i18n": {
       "defaultLocale": "en_US",
@@ -30,8 +30,8 @@
     "watcher": {
       "type": "development",
       "eventSources": {
-        "default": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-watcher@3.1.1@egg-watcher/lib/event-sources/default",
-        "development": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-watcher@3.1.1@egg-watcher/lib/event-sources/development"
+        "default": "G:\\github\\edith-backend\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\default",
+        "development": "G:\\github\\edith-backend\\node_modules\\_egg-watcher@3.1.1@egg-watcher\\lib\\event-sources\\development"
       }
     },
     "customLogger": {
@@ -54,7 +54,7 @@
       "files": 10,
       "fileExtensions": [],
       "whitelist": null,
-      "tmpdir": "/var/folders/1q/fnqhbrq17sv62bh2scwzrdt00000gp/T/egg-multipart-tmp/egg-ts",
+      "tmpdir": "C:\\Users\\ADMINI\\x7e1\\AppData\\Local\\Temp\\egg-multipart-tmp\\egg-ts",
       "cleanSchedule": {
         "cron": "0 30 4 * * *"
       }
@@ -77,14 +77,14 @@
     },
     "static": {
       "prefix": "/public/",
-      "dir": "/Users/fengzhihao/Projects/github/edith-backend/app/public",
+      "dir": "G:\\github\\edith-backend\\app\\public",
       "dynamic": true,
       "preload": false,
       "buffer": false,
       "maxFiles": 1000
     },
     "view": {
-      "root": "/Users/fengzhihao/Projects/github/edith-backend/app/view",
+      "root": "G:\\github\\edith-backend\\app\\view",
       "cache": false,
       "defaultExtension": ".html",
       "defaultViewEngine": "",
@@ -119,14 +119,26 @@
         "test": "egg-bin test"
       },
       "dependencies": {
+        "@babel/template": "^7.8.6",
+        "acorn-walk": "^7.1.1",
+        "babel-traverse": "^6.26.0",
+        "browser-resolve": "^1.11.3",
         "egg": "^2.6.1",
         "egg-jwt": "^3.0.0",
         "egg-scripts": "^2.6.0",
         "egg-shell-decorators": "^1.0.4",
         "egg-validate": "^2.0.2",
+        "json5": "^2.1.2",
         "lodash": "^4.17.15",
         "md5": "^2.2.1",
-        "moment": "^2.24.0"
+        "meriyah": "^1.9.10",
+        "moment": "^2.24.0",
+        "mz": "^2.7.0",
+        "npm-package-arg": "^8.0.1",
+        "pacote": "^11.1.4",
+        "recursive-readdir": "^2.2.2",
+        "recursive-readdir-sync": "^1.0.6",
+        "string-hash": "^1.1.3"
       },
       "devDependencies": {
         "@types/mocha": "^2.2.40",
@@ -148,9 +160,9 @@
         "coverage"
       ]
     },
-    "baseDir": "/Users/fengzhihao/Projects/github/edith-backend",
-    "HOME": "/Users/fengzhihao",
-    "rundir": "/Users/fengzhihao/Projects/github/edith-backend/run",
+    "baseDir": "G:\\github\\edith-backend",
+    "HOME": "C:\\Users\\Administrator",
+    "rundir": "G:\\github\\edith-backend\\run",
     "dump": {
       "ignore": "<Set>"
     },
@@ -182,7 +194,7 @@
       "onerror": "<Function onerror>"
     },
     "logger": {
-      "dir": "/Users/fengzhihao/Projects/github/edith-backend/logs/egg-ts",
+      "dir": "G:\\github\\edith-backend\\logs\\egg-ts",
       "encoding": "utf8",
       "env": "local",
       "level": "INFO",
@@ -264,8 +276,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-session@3.1.0@egg-session",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-session@3.1.0@egg-session",
       "version": "3.1.0"
     },
     "jsonp": {
@@ -277,8 +289,8 @@
         "security"
       ],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-jsonp@2.0.0@egg-jsonp",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-jsonp@2.0.0@egg-jsonp",
       "version": "2.0.0"
     },
     "onerror": {
@@ -290,8 +302,8 @@
         "jsonp"
       ],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-onerror@2.1.0@egg-onerror",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-onerror@2.1.0@egg-onerror",
       "version": "2.1.0"
     },
     "i18n": {
@@ -301,8 +313,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-i18n@2.1.1@egg-i18n",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-i18n@2.1.1@egg-i18n",
       "version": "2.1.1"
     },
     "watcher": {
@@ -312,8 +324,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-watcher@3.1.1@egg-watcher",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-watcher@3.1.1@egg-watcher",
       "version": "3.1.1"
     },
     "schedule": {
@@ -323,8 +335,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-schedule@3.6.4@egg-schedule",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-schedule@3.6.4@egg-schedule",
       "version": "3.6.4"
     },
     "multipart": {
@@ -336,9 +348,9 @@
         "schedule"
       ],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-multipart@2.10.1@egg-multipart",
-      "version": "2.10.1"
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-multipart@2.10.2@egg-multipart",
+      "version": "2.10.2"
     },
     "development": {
       "enable": true,
@@ -351,8 +363,8 @@
       "env": [
         "local"
       ],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-development@2.4.3@egg-development",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-development@2.4.3@egg-development",
       "version": "2.4.3"
     },
     "logrotator": {
@@ -364,8 +376,8 @@
       ],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-logrotator@3.1.0@egg-logrotator",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-logrotator@3.1.0@egg-logrotator",
       "version": "3.1.0"
     },
     "static": {
@@ -375,8 +387,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-static@2.2.0@egg-static",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-static@2.2.0@egg-static",
       "version": "2.2.0"
     },
     "view": {
@@ -386,8 +398,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/plugin.js",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-view@2.1.2@egg-view",
+      "from": "G:\\github\\edith-backend\\node_modules\\_egg@2.26.0@egg\\config\\plugin.js",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-view@2.1.2@egg-view",
       "version": "2.1.2"
     },
     "jwt": {
@@ -399,8 +411,8 @@
         "onerror"
       ],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/config/plugin.ts",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-jwt@3.1.7@egg-jwt",
+      "from": "G:\\github\\edith-backend\\config\\plugin.ts",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-jwt@3.1.7@egg-jwt",
       "version": "3.1.7"
     },
     "cors": {
@@ -410,8 +422,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/config/plugin.ts",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-cors@2.2.3@egg-cors",
+      "from": "G:\\github\\edith-backend\\config\\plugin.ts",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-cors@2.2.3@egg-cors",
       "version": "2.2.3"
     },
     "validate": {
@@ -421,8 +433,8 @@
       "dependencies": [],
       "optionalDependencies": [],
       "env": [],
-      "from": "/Users/fengzhihao/Projects/github/edith-backend/config/plugin.ts",
-      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-validate@2.0.2@egg-validate",
+      "from": "G:\\github\\edith-backend\\config\\plugin.ts",
+      "path": "G:\\github\\edith-backend\\node_modules\\_egg-validate@2.0.2@egg-validate",
       "version": "2.0.2"
     }
   }
