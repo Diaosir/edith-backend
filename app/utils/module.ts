@@ -191,12 +191,12 @@ export class EdithModule{
     }
   }
 }
-for(var i = 0; i < numCPUs; i++) {
-  const worker = fork(path.resolve(__dirname, './getContent.worker.js'));
-  EdithModule.workers.push(worker);
-  EdithModule.freeWorkers.push(worker);
-}
-console.log(`numCPUs:${numCPUs}`)
+// for(var i = 0; i < numCPUs; i++) {
+//   const worker = fork(path.resolve(__dirname, './getContent.worker.js'));
+//   EdithModule.workers.push(worker);
+//   EdithModule.freeWorkers.push(worker);
+// }
+// console.log(`numCPUs:${numCPUs}`)
 async function getModule(request: string, parent: EdithModule | null, node_modules_path: string = '/node_modules'): Promise<EdithModule | null> {
   const parentFileName = parent ? parent.filename : '';
   const id = path.join(node_modules_path, parentFileName || '', request);

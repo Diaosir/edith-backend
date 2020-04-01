@@ -96,6 +96,32 @@
     ]
   },
   {
+    "name": "components",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/v2/component",
+    "regexp": "/^\\/api\\/v2\\/component(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": "projects",
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/v2/project",
+    "regexp": "/^\\/api\\/v2\\/project(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
     "name": null,
     "methods": [
       "HEAD",
@@ -127,6 +153,30 @@
     ],
     "paramNames": [
       {
+        "name": "packageString",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/v2/package/:packageString",
+    "regexp": "/^\\/api\\/v2\\/package\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
         "name": "packages",
         "prefix": "/",
         "delimiter": "/",
@@ -137,8 +187,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/v2/combinations/:packages",
-    "regexp": "/^\\/api\\/v2\\/combinations\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/v2/package/combinations/:packages",
+    "regexp": "/^\\/api\\/v2\\/package\\/combinations\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

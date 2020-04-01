@@ -6,7 +6,7 @@ import findRequires, { IFileData } from "./packages/find-requires";
 import { fs } from "mz";
 import * as path from "path";
 import * as rimraf from "rimraf";
-
+import mergeResults from './utils/merge-results'
 import getHash from "./utils/get-hash";
 
 async function getContents(
@@ -14,18 +14,11 @@ async function getContents(
   packagePath: string,
   packageInfos: { [p: string]: IPackage },
 ): Promise<IFileData> {
-  let contents = await findRequires(
+  const contents = await findRequires(
     dependency.name,
     packagePath,
     packageInfos,
   );
-  // let newContents = Object.keys(contents).reduce(
-  //   (total, next) => ({
-  //     ...total,
-  //     [next.replace(packagePath, "")]: contents[next],
-  //   }),
-  //   {},
-  // );
   console.log(packagePath)
   // console.log(newContents)
   const packageJSONFiles = Object.keys(packageInfos).reduce(
@@ -40,8 +33,8 @@ async function getContents(
   return { ...contents, ...packageJSONFiles };
 }
 let packaging = false;
-export async function packager(packages: Array<string>) {
-  const packageParts = packages[0].replace("/", "").split("@");
+export async function getPackage(packageString: string) {
+  const packageParts = packageString.replace("/", "").split("@");
   const version = packageParts.pop();
   const dependency = { name: packageParts.join("@") || '', version: version || '' };
   const hash = getHash(dependency);
@@ -75,6 +68,7 @@ export async function packager(packages: Array<string>) {
     await installDependencies(dependency, packagePath);
 
     const packageInfos = await findPackageInfos(dependency.name, packagePath);
+
     const contents = await getContents(dependency, packagePath, packageInfos);
 
     console.log(
@@ -97,12 +91,12 @@ export async function packager(packages: Array<string>) {
     const response = {
       contents,
       dependency,
-      // ...findDependencyDependencies(
-      //   dependency,
-      //   packagePath,
-      //   packageInfos,
-      //   requireStatements,
-      // ),
+      ...findDependencyDependencies(
+        dependency,
+        packagePath,
+        packageInfos,
+        requireStatements,
+      ),
     };
     // Cleanup
     try {
@@ -122,4 +116,13 @@ export async function packager(packages: Array<string>) {
   } finally {
     packaging = false;
   }
+}
+export async function packager(packages: Array<string>) {
+  let results = await Promise.all(packages.map(async packageStr => {
+     return await getPackage(packageStr)
+  }))
+  results = results.filter((result: any) => {
+    return !!result && !result.error && !!result.dependency
+  })
+  return mergeResults(results)
 }
