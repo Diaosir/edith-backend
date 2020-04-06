@@ -97,6 +97,18 @@
     },
     "cors": {},
     "validate": {},
+    "mongoose": {
+      "url": "",
+      "options": {},
+      "plugins": [],
+      "loadModel": true,
+      "app": true,
+      "agent": false,
+      "client": {
+        "url": "mongodb://127.0.0.1:27017/edith",
+        "options": {}
+      }
+    },
     "env": "local",
     "name": "egg-ts",
     "keys": "<String len: 25>",
@@ -125,9 +137,11 @@
         "browser-resolve": "^1.11.3",
         "egg": "^2.6.1",
         "egg-jwt": "^3.0.0",
+        "egg-mongoose": "^3.2.0",
         "egg-scripts": "^2.6.0",
         "egg-shell-decorators": "^1.0.4",
         "egg-validate": "^2.0.2",
+        "file-system-cache": "^1.0.5",
         "json5": "^2.1.2",
         "lodash": "^4.17.15",
         "md5": "^2.2.1",
@@ -436,6 +450,17 @@
       "from": "/Users/fengzhihao/Projects/github/edith-backend/config/plugin.ts",
       "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-validate@2.0.2@egg-validate",
       "version": "2.0.2"
+    },
+    "mongoose": {
+      "enable": true,
+      "package": "egg-mongoose",
+      "name": "mongoose",
+      "dependencies": [],
+      "optionalDependencies": [],
+      "env": [],
+      "from": "/Users/fengzhihao/Projects/github/edith-backend/config/plugin.ts",
+      "path": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-mongoose@3.2.0@egg-mongoose",
+      "version": "3.2.0"
     }
   }
 }

@@ -10,6 +10,18 @@
     "enable": "/Users/fengzhihao/Projects/github/edith-backend/config/config.default.ts",
     "match": "/Users/fengzhihao/Projects/github/edith-backend/config/config.default.ts"
   },
+  "mongoose": {
+    "client": {
+      "url": "/Users/fengzhihao/Projects/github/edith-backend/config/config.local.ts",
+      "options": "/Users/fengzhihao/Projects/github/edith-backend/config/config.local.ts"
+    },
+    "url": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-mongoose@3.2.0@egg-mongoose/config/config.default.js",
+    "options": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-mongoose@3.2.0@egg-mongoose/config/config.default.js",
+    "plugins": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-mongoose@3.2.0@egg-mongoose/config/config.default.js",
+    "loadModel": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-mongoose@3.2.0@egg-mongoose/config/config.default.js",
+    "app": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-mongoose@3.2.0@egg-mongoose/config/config.default.js",
+    "agent": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-mongoose@3.2.0@egg-mongoose/config/config.default.js"
+  },
   "session": {
     "maxAge": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
     "key": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg-session@3.1.0@egg-session/config/config.default.js",
@@ -126,9 +138,11 @@
       "browser-resolve": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-jwt": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "egg-mongoose": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-scripts": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-shell-decorators": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "egg-validate": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
+      "file-system-cache": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "json5": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "lodash": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",
       "md5": "/Users/fengzhihao/Projects/github/edith-backend/node_modules/_egg@2.26.0@egg/config/config.default.js",

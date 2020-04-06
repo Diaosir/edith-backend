@@ -1,6 +1,6 @@
 import findDependencyDependencies from "./dependencies/find-dependency-dependencies";
 import installDependencies from "./dependencies/install-dependencies";
-
+import * as cache from './utils/cache'
 import findPackageInfos, { IPackage } from "./packages/find-package-infos";
 import findRequires, { IFileData } from "./packages/find-requires";
 import { fs } from "mz";
@@ -8,7 +8,6 @@ import * as path from "path";
 import * as rimraf from "rimraf";
 import mergeResults from './utils/merge-results'
 import getHash from "./utils/get-hash";
-
 async function getContents(
   dependency: any,
   packagePath: string,
@@ -34,13 +33,17 @@ async function getContents(
 }
 let packaging = false;
 export async function getPackage(packageString: string) {
-  const packageParts = packageString.replace("/", "").split("@");
+  const packageParts = packageString.split("@");
   const version = packageParts.pop();
   const dependency = { name: packageParts.join("@") || '', version: version || '' };
   const hash = getHash(dependency);
   const t = Date.now();
   if (!hash) {
     return;
+  }
+  const cacheData = await cache.get(hash)
+  if(cacheData) {
+    return JSON.parse(cacheData);
   }
   let packagePath = path.join("/tmp", hash);
   if(!packaging) {
@@ -104,6 +107,7 @@ export async function getPackage(packageString: string) {
     } catch (e) {
       /* ignore */
     }
+    await cache.set(hash, JSON.stringify(response));
     return response
   } catch (e) {
     // Cleanup
@@ -119,10 +123,11 @@ export async function getPackage(packageString: string) {
 }
 export async function packager(packages: Array<string>) {
   let results = await Promise.all(packages.map(async packageStr => {
-     return await getPackage(packageStr)
+    return await getPackage(packageStr)
   }))
   results = results.filter((result: any) => {
     return !!result && !result.error && !!result.dependency
   })
   return mergeResults(results)
 }
+

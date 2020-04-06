@@ -1,0 +1,9 @@
+@import './base.scss';
+.App{
+  background: $primary-color;
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  border: 2px solid #00aa00;
+  @include rounded-corners;
+}

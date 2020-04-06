@@ -1,0 +1,8 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+@mixin rounded-corners {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}

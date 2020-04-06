@@ -1,0 +1,13 @@
+body{
+    outline: 0;
+    padding: 20px;
+    position: relative;
+    border-radius: 4px;
+    justify-content: center;
+    background-color: #f5f5f5;
+    padding-top: 30px;
+}
+.App{
+    display: flex;
+    justify-content: center;
+}
